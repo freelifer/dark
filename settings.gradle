@@ -1,0 +1,12 @@
+include ':plugin_load'
+//include ':app'
+
+
+includeSample()
+
+
+
+def includeSample() {
+    include 'sample_host'
+    project(':sample_host').projectDir = file('projects/sample/sample_host')
+}
